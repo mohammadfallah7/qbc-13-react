@@ -1,5 +1,5 @@
 function App() {
-  const username = "Front";
+  const username = "React";
 
   return <h1 className="text-red-500 text-3xl">Hello QBC {username}</h1>;
 }
