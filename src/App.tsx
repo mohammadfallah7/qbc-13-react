@@ -1,13 +1,11 @@
-import Profile from "./components/Profile";
+import Gallery, { Profile } from "./components/Gallery";
 
 function App() {
   return (
-    <section>
-      <h1>Amazing scientists</h1>
+    <div>
       <Profile />
-      <Profile />
-      <Profile />
-    </section>
+      <Gallery />
+    </div>
   );
 }
 
