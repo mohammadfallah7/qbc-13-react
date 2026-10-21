@@ -1,8 +1,18 @@
-const Avatar = () => {
-  const avatar = "https://react.dev/images/docs/scientists/7vQD0fPs.jpg";
-  const description = "Gregorio Y. Zara";
+interface AvatarProps {
+  size: number;
+  person: { name: string; imageId: string };
+}
 
-  return <img className="avatar" src={avatar} alt={description} />;
+const Avatar = ({ size, person }: AvatarProps) => {
+  return (
+    <img
+      className="avatar"
+      src={`https://react.dev/images/docs/scientists/${person.imageId}.jpg`}
+      alt={person.name}
+      width={size}
+      height={size}
+    />
+  );
 };
 
 export default Avatar;

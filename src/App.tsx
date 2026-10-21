@@ -1,14 +1,17 @@
 import Avatar from "./components/Avatar";
-import Gallery, { Profile } from "./components/Gallery";
+import Gallery from "./components/Gallery";
 import TodoList from "./components/TodoList";
 
 function App() {
   return (
     <div>
-      <Profile />
       <Gallery />
       <TodoList />
-      <Avatar />
+      <Avatar size={150} person={{ name: "Lin Lanying", imageId: "1bX5QH6" }} />
+      <Avatar
+        size={100}
+        person={{ name: "Katherine Johnson", imageId: "MK3eW3As" }}
+      />
     </div>
   );
 }
