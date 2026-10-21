@@ -1,10 +1,12 @@
 const TodoList = () => {
+  const name = "Hedy Fallah";
+
   return (
     <>
-      <h1>Hedy Lamarr's Todos</h1>
+      <h1>{name}'s Todos</h1>
       <img
         src="https://react.dev/images/docs/scientists/yXOvdOSs.jpg"
-        alt="Hedy Lamarr"
+        alt={name}
         className="photo"
       />
       <ul>

@@ -1,3 +1,4 @@
+import Avatar from "./components/Avatar";
 import Gallery, { Profile } from "./components/Gallery";
 import TodoList from "./components/TodoList";
 
@@ -7,6 +8,7 @@ function App() {
       <Profile />
       <Gallery />
       <TodoList />
+      <Avatar />
     </div>
   );
 }
