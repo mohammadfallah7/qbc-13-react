@@ -1,7 +1,14 @@
-function App() {
-  const username = "React";
+import Profile from "./components/Profile";
 
-  return <h1 className="text-red-500 text-3xl">Hello QBC {username}</h1>;
+function App() {
+  return (
+    <section>
+      <h1>Amazing scientists</h1>
+      <Profile />
+      <Profile />
+      <Profile />
+    </section>
+  );
 }
 
 export default App;
